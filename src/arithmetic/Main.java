@@ -4,10 +4,13 @@ import java.util.Scanner;
 
 import arithmetic.model.Addition;
 import arithmetic.model.ArithmeticOperation;
+import arithmetic.model.Division;
+import arithmetic.model.Multiplication;
+import arithmetic.model.Substraction;
 
 public class Main {
 	public static void main(String[] args) {
-		ArithmeticOperation[] operations = {new Addition()};
+		ArithmeticOperation[] operations = {new Addition(),new Substraction(),new Multiplication(),new Division()};
 		Scanner sc = new Scanner(System.in);
 		double a, b, result = Double.NaN;
 		char symbol;
